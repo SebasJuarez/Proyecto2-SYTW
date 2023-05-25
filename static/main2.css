@@ -1,5 +1,7 @@
 body {
-    background-color: #ffffff;
+    background-image: url("https://cdn.dribbble.com/users/370956/screenshots/2207922/gym.gif");
+    background-size: cover;
+    background-position: center;
     margin-top: 5rem;
   }
   

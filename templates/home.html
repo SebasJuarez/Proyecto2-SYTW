@@ -1,7 +1,7 @@
 {% extends "layout1.html" %}
 {% block content %}
     <div class="media-body">
-        <div class="article-metadata">
+        <div>
             <h2 class="bienvenido" href="#">Bienvenido {{ Hol2 }} ¿Qué quieres hacer hoy?</h2>
         </div>
     </div>
@@ -10,7 +10,7 @@
           <td class="celdas">
             <a href="{{ url_for('calendario') }}">
               <img class="imagenes" src="https://www.pngmart.com/files/7/Calendar-Background-PNG.png" alt="Calendario">
-              <p>Calendario</p>
+              <p>Tu Calendario</p>
             </a>
           </td>
           <td class="celdas">
@@ -22,7 +22,7 @@
           <td class="celdas">
             <a href="{{ url_for('busqueda') }}">
               <img class="imagenes" src="https://img.freepik.com/vector-premium/icono-blanco-negro-lupa-contorno-negro_833685-54.jpg?w=2000" alt="Busqueda">
-              <p>Busqueda</p>
+              <p>Busqueda de Cursos</p>
             </a>
           </td>
         </tr>

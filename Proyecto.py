@@ -60,5 +60,29 @@ def home():
 def configuration():
     return render_template('configuration.html')
 
+@app.route("/perfil")
+def perfil():
+    user= session.get('user')
+    cursor.execute("SELECT nombre, apellido FROM usuario WHERE user_id = %s", (user, ))
+    result = cursor.fetchone()
+    if result is not None:
+        Hol21 = result[0]
+        Hol22 = result[1]
+        Hol2 = Hol21 + " " + Hol22
+    else:
+        Hol2 = None
+    return render_template('perfil.html', Hol2=Hol2)
+
+@app.route("/calendario")
+def calendario():
+    return render_template('calendario.html')
+@app.route("/estadisticas")
+def estadisticas():
+    return render_template('estadisticas.html')
+@app.route("/busqueda")
+def busqueda():
+    return render_template('busqueda.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

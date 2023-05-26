@@ -90,3 +90,36 @@ body {
     text-align: justify;
     background-color: #ffffff;
   }
+  .perfil{
+    text-align: center;
+  }
+  .perf{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .nomb {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .bienvenido{
+    text-align: center;
+  }
+  .principal {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .celdas {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .imagenes {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }

@@ -2,7 +2,29 @@
 {% block content %}
     <div class="media-body">
         <div class="article-metadata">
-            <h2 class="mr-2" href="#">Bienvenido {{ Hol2 }} ¿Qué quieres hacer hoy?</h2>
+            <h2 class="bienvenido" href="#">Bienvenido {{ Hol2 }} ¿Qué quieres hacer hoy?</h2>
         </div>
     </div>
+    <table class="principal">
+        <tr>
+          <td class="celdas">
+            <a href="{{ url_for('calendario') }}">
+              <img class="imagenes" src="https://www.pngmart.com/files/7/Calendar-Background-PNG.png" alt="Calendario">
+              <p>Calendario</p>
+            </a>
+          </td>
+          <td class="celdas">
+            <a href="{{ url_for('estadisticas') }}">
+              <img class="imagenes" src="https://static.vecteezy.com/system/resources/previews/000/495/405/non_2x/vector-stats-line-black-icon.jpg" alt="Estadisticas">
+              <p>Tus Estadisticas</p>
+            </a>
+          </td>
+          <td class="celdas">
+            <a href="{{ url_for('busqueda') }}">
+              <img class="imagenes" src="https://img.freepik.com/vector-premium/icono-blanco-negro-lupa-contorno-negro_833685-54.jpg?w=2000" alt="Busqueda">
+              <p>Busqueda</p>
+            </a>
+          </td>
+        </tr>
+      </table>
 {% endblock content %}

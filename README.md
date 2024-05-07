@@ -17,7 +17,7 @@ Este proyecto, al estar utilizando una base de datos, se trato de conectar con p
 import psycopg2
 conn= psycopg2.connect(database="Proyecto2",
     user='postgres',
-    password='Fac3viche',
+    password='Hola!',
     host='localhost')
 conn.autocommit=True
 cursor=conn.cursor()
